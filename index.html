@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Rashid - Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Mohammad Rashid</h2>
+    <img src="./image.png" alt="Mohammad Rashid" class="profile-pic">
+    <nav class="nav">
+      <a href="#about">About Me</a> <br>
+      <a href="#skills">Skills</a><br>
+      <a href="#projects">Projects</a><br>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm <strong>Mohammad Rashid</strong>. I'm currently in my 2nd year of pursuing a Bachelor of Computer Applications (BCA). <br> With a passion for crafting visually appealing and user-friendly web interfaces, 'I specialize in frontend web development'. <br> I'm continually expanding my skill set, diving into various programming languages and frameworks to stay at the forefront of technology . <br> My passion lies in creating visually stunning and highly functional web applications. I have a keen eye for design and a strong commitment to writing clean, efficient code. Over the past few years, I have been honing my skills in HTML, CSS, and JavaScript, as well as exploring modern frameworks like React and Bootstrap. When I'm not coding, you can find me exploring the latest tech trends, participating in coding bootcamps, or working on personal projects that push my creative boundaries. I'm excited about the endless possibilities that technology offers and look forward to contributing to meaningful projects in the tech industry.
+      </p>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Bootstrap</li>
+        <li>JQuery</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>A brief description of project 1...</p>
+        <button onclick="toggleDetails('project1Details')">More Details</button>
+        <div id="project1Details" class="hidden">
+          <p>Detailed description of project 1...</p>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>A brief description of project 2...</p>
+        <button onclick="toggleDetails('project2Details')">More Details</button>
+        <div id="project2Details" class="hidden">
+          <p>Detailed description of project 2...</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required> <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
